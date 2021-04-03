@@ -77,10 +77,15 @@ button {
   box-shadow: 2px 2px 15px white;
 }
 
-button:hover {
+.link-box:hover {
   color: orangered;
   text-shadow: 2px 2px 15px rgb(167, 64, 64);
   transition: 0.2s ease-in-out;
+}
+
+.link-box:hover > .icon {
+  color: white !important;
+  border-color: orangered;
 }
 
 .icon {
