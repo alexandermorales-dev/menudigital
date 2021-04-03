@@ -13,7 +13,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: bottom;
-  height: 100vh;
+  height: 110vh;
 }
 
 header {
@@ -42,8 +42,17 @@ header {
   border-color: orangered;
 }
 
+.section-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .container {
   display: flex;
+  border: 1px solid green;
+  width: 80%;
+  padding: 20px;
+
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -57,7 +66,7 @@ header {
   border-radius: 20px;
   margin-bottom: 1rem;
   padding: 0.8rem;
-  width: 500px;
+  width: 50%;
   background-color: black;
   color: white;
 }
@@ -110,6 +119,23 @@ a {
   -ms-animation: fadein 2s; /* Internet Explorer */
   -o-animation: fadein 2s; /* Opera < 12.1 */
   animation: fadein 7s;
+}
+
+@media only screen and (max-width: 768px) {
+  .link-box {
+    width: 100%;
+  }
+
+  .icon {
+    min-width: 30px;
+    min-height: 16px;
+    justify-self: left;
+  }
+
+  .link {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 @keyframes fadein {
