@@ -49,7 +49,6 @@ header {
 }
 .container {
   display: flex;
-  border: 1px solid green;
   width: 80%;
   padding: 20px;
 
